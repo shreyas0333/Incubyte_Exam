@@ -15,6 +15,12 @@ public class StringCalculatorTest {
        assertEquals(0, stringCalculator.add(""));
    }
 
- 
-
+   @Test
+   public void numberStringShouldReturnSameNumber() {
+       StringCalculator stringCalculator = new StringCalculator();
+       assertEquals(1, stringCalculator.add("1"));
+       assertEquals(calculator.add("5"), 5);
+   }
+   
+   
 }
