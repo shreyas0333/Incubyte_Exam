@@ -28,7 +28,10 @@ public class StringCalculatorTest {
        assertEquals(25, calculator.add("10,15"));
    }
    
-
-   
+      @Test
+      public void numbersGreaterThan1000AreIgnored() {
+          assertEquals(calculator.add("5,12,1001"), 17);
+          assertEquals(calculator.add("14124,22\n4,1214"), 26);
+      }
 
 }
